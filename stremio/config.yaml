@@ -1,0 +1,14 @@
+name: "Stremio Server"
+description: "Home Assistant addon to start a Stremio server"
+url: "https://github.com/joaogsleite/ha-addons/tree/main/stremio"
+version: "1.0.2"
+slug: "stremio_server"
+init: false
+ports:
+  11470/tcp: 11470
+arch:
+  - aarch64
+  - amd64
+  - armhf
+  - armv7
+  - i386
