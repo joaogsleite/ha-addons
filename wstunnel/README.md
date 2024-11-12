@@ -28,7 +28,7 @@ In your client computer:
 2. `ssh -o ProxyCommand="wstunnel client -L stdio://%h:%p wss://yourdomain.com" hassio@homeassistant`
 
 
-### Install instructions
+### Client instructions 
 
 Example for the Raspberry Pi:
 
@@ -41,3 +41,9 @@ sudo chmod +x /usr/local/bin/wstunnel
 ```
 
 > This is just an example, please check [releases](https://github.com/erebe/wstunnel/releases) for a more recent download link.
+
+Example for macOS:
+
+```bash
+brew install wstunnel
+```
