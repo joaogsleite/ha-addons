@@ -1,6 +1,6 @@
 # Home Assistant Add-on: WSTunnel Server
 
-_WSTunnel server._
+Access your home assistant SSH server behind a cloudflare tunnel.
 
 ![Supports aarch64 Architecture][aarch64-shield]
 ![Supports amd64 Architecture][amd64-shield]
@@ -13,3 +13,16 @@ _WSTunnel server._
 [armhf-shield]: https://img.shields.io/badge/armhf-yes-green.svg
 [armv7-shield]: https://img.shields.io/badge/armv7-yes-green.svg
 [i386-shield]: https://img.shields.io/badge/i386-yes-green.svg
+
+### Instructions
+
+After installing and starting this addon:
+
+1. Install and start **Advanced SSH & Web Terminal** addon
+2. Install and configure **Cloudflared** addon with your Cloudflare Tunnel Token
+3. Configure tunnel in Cloudflare pointing your (sub)domain to your homeassistant local IP and the port 18809
+
+In your client computer:
+
+1. Install [wstunnel](https://github.com/erebe/wstunnel)
+2. `ssh -o ProxyCommand="wstunnel client -L stdio://%h:%p wss://yourdomain.com" hassio@homeassistant`

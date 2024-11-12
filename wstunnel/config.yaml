@@ -1,7 +1,7 @@
 name: "WSTunnel Server"
 description: "Home Assistant addon to start a wstunnel server"
 url: "https://github.com/joaogsleite/ha-addons/tree/main/wstunnel"
-version: "1.0.0"
+version: "1.0.1"
 slug: "wstunnel_server"
 init: false
 ports:
