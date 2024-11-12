@@ -26,3 +26,18 @@ In your client computer:
 
 1. Install [wstunnel](https://github.com/erebe/wstunnel)
 2. `ssh -o ProxyCommand="wstunnel client -L stdio://%h:%p wss://yourdomain.com" hassio@homeassistant`
+
+
+### Install instructions
+
+Example for the Raspberry Pi:
+
+```bash
+mkdir wstunnel && cd wstunnel
+wget https://github.com/erebe/wstunnel/releases/download/v10.1.6/wstunnel_10.1.6_linux_arm64.tar.gz
+tar -xvzf *.tar.gz
+sudo mv wstunnel /usr/local/bin
+sudo chmod +x /usr/local/bin/wstunnel
+```
+
+> This is just an example, please check [releases](https://github.com/erebe/wstunnel/releases) for a more recent download link.
